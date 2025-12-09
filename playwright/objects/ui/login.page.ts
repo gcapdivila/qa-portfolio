@@ -1,5 +1,6 @@
 import { Page } from "@playwright/test";
 import { TestUser } from "../../fixtures/data/test-users";
+import { waitForLogin } from "@helpers/local-storage";
 
 export class LoginPage {
     page: Page;
@@ -27,6 +28,7 @@ export class LoginPage {
     async loginAs(user: TestUser) {
         await this.fillUsername(user.username);
         await this.fillPassword(user.password);
-        await this.submitLogin()
+        await this.submitLogin();
+        await waitForLogin(this.page);
     }
 }
