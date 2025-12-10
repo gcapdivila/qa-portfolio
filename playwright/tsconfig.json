@@ -1,13 +1,14 @@
 {
   "compilerOptions": {
     "target": "ESNext",
-    "module": "commonjs",
+    "module": "esnext",
     "types": ["node", "@playwright/test"],
     "moduleResolution": "bundler",
     "strict": true,
     "paths": {
         "@fixtures/*": ["./fixtures/*"],
-        "@helpers/*": ["./helpers/*"]
+        "@helpers/*": ["./helpers/*"],
+        "@objects/*": ["./objects/*"]
     }
   },
   "include": ["./**/*.ts"]

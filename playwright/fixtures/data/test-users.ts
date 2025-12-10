@@ -9,7 +9,7 @@ export type Role = "admin" | "editor" | "guest";
 export const USERS = {
     admin: { username: "admin", password: "admin", role: "admin" },
     editor: { username: "editor", password: "editor", role: "editor" },
-    user: { username: "user", password: "user", role: "guest" }
+    user: { username: "user", password: "user", role: "user" }
 } as const;
 
 export type UserKey = keyof typeof USERS;
