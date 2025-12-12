@@ -1,98 +1,141 @@
 # QA Automation Portfolio – Gilles Capdivila
 
-Welcome to my Quality Assurance and Test Automation portfolio.  
-This repository showcases examples of my work as a **Senior QA Manager / QA Automation Lead**, covering:
+Welcome to my **Quality Assurance & Test Automation portfolio**.
 
-- UI automation (Playwright, Selenium Java, Selenium Python)
-- API testing (Postman / Newman)
-- Performance testing (K6)
-- RobotFramework (keyword-driven scenarios)
-- Utility scripts and supporting tools
-- Test strategy, shift-left practices, and engineering discipline
+This repository gathers selected projects illustrating my work as a  
+**Senior QA Manager / QA Automation Lead**, with a strong focus on:
 
-The goal of this portfolio is to provide a clear overview of my technical skills, my approach to designing automation frameworks, and the principles I apply when building a strong QA culture.
+- test automation architecture
+- maintainability and readability
+- quality engineering practices beyond “just testing”
+
+The goal of this portfolio is not to showcase as many tools as possible,
+but to demonstrate **how I design, structure, and reason about quality at scale**.
 
 ---
 
-## 📁 Repository Structure
+## 🌐 Live QA Playground
+
+A live demo application used as a test target for this portfolio:
+
+👉 https://gcquality-automation-demo.vercel.app
+
+The playground is intentionally simple from a functional point of view,
+but designed to support realistic QA scenarios:
+- authentication & permissions
+- protected routes
+- UI behaviors
+- error handling
+- visual regression components
+
+---
+
+## 🎯 What you’ll find here
+
+This portfolio covers multiple aspects of Quality Engineering:
+
+- **UI automation**
+  - Playwright (TypeScript)
+  - Selenium (Java & Python)
+- **API testing**
+  - Postman collections
+  - Newman runners
+- **Performance testing**
+  - K6 (smoke & load scenarios)
+- **Keyword-driven testing**
+  - RobotFramework
+- **Utilities & helpers**
+  - Scripts supporting QA workflows
+- **QA strategy & methodology**
+  - shift-left practices
+  - risk-based testing
+  - documentation & structure
+  - quality advocacy
+
+---
+
+## 📁 Repository structure
 
 ```
 qa-portfolio/
-├── playwright/ → Playwright UI automation framework
-├── selenium-java/ → Java Selenium example with POM design
+├── playwright/ → Modern UI automation framework (TypeScript)
+├── selenium-java/ → Java Selenium example with POM architecture
 ├── selenium-python/ → Python Selenium example
-├── robotframework/ → RobotFramework test suites + keywords
-├── api-tests/ → Postman collections and Newman runners
-├── k6/ → Performance testing (smoke/load)
+├── robotframework/ → RobotFramework suites & reusable keywords
+├── api-tests/ → Postman collections & Newman runners
+├── k6/ → Performance testing (smoke / load)
 └── utils/ → Helper scripts for QA workflows
 ```
 
 
-Each folder contains a dedicated README explaining its purpose, structure, and intended use.
+Each folder contains its own README describing:
+- the intent of the project
+- the technical choices
+- the structure and conventions used
 
 ---
 
-## 🎯 Goals of This Portfolio
+## 🧠 Guiding principles
 
-This portfolio is designed to:
+Across all projects in this repository, I focus on:
 
-### **✔ Demonstrate technical excellence**
-Show clean, maintainable examples of UI, API, and performance automation.
+- tests as a **product**, not a by-product
+- clarity over cleverness
+- separation between actions and assertions
+- scalable test architecture
+- minimal duplication
+- readable test reports
 
-### **✔ Highlight framework architecture skills**
-Page Object Models, fixtures, reusable components, utilities, CI/CD hooks…
-
-### **✔ Showcase breadth of QA engineering**
-Multiple languages and tools:
-- TypeScript (Playwright)
-- Java (Selenium)
-- Python (Selenium, RobotFramework keywords)
-- JavaScript (K6, utilities)
-
-### **✔ Illustrate QA leadership and methodology**
-Risk-based testing, shift-left approach, quality advocacy, documentation structure.
-
-### **✔ Provide live, testable examples**
-Once published, test automation will target a dedicated **QA Playground website** (in development).
+The emphasis is deliberately placed on **design and maintainability** rather than raw test volume.
 
 ---
 
-## 🔧 Technologies Used
+## 🧪 Live test target: QA Playground
 
-- **Playwright** – Modern UI testing framework
+This portfolio is progressively being connected to a dedicated **QA Playground** web application, used as a common test target.
+
+The playground includes:
+- authentication flows (guest / editor / admin)
+- protected routes & permissions
+- multi-step forms
+- dynamic tables
+- error scenarios
+- API endpoints
+- UI components for visual regression
+
+Each automation project will eventually include **real, runnable test suites** targeting these workflows.
+
+---
+
+## 🔧 Technologies used
+
+- **Playwright** – Modern UI testing
 - **Selenium (Java & Python)** – Browser automation foundations
 - **RobotFramework** – Keyword-driven testing
 - **Postman / Newman** – API test automation
 - **K6** – Performance & reliability testing
-- **Node / JavaScript / TypeScript / Python / Java** – Supporting languages
+- **TypeScript / JavaScript / Python / Java**
 - **GitHub Actions (optional)** – CI/CD examples
 
 ---
 
-## 🧪 Upcoming Work (Work in Progress)
+## 🧭 Work in progress
 
-This repository will evolve as I build a small **QA Playground** website containing:
+This portfolio evolves continuously as new experiments, refactors, and test strategies are added.
 
-- login flows  
-- multi-step forms  
-- dynamic tables  
-- error scenarios  
-- API endpoints  
-- UI components for visual regression  
-
-Once live, each automation folder will include real test suites targeting those workflows.
-
-You can follow progress in the repository history.
+You can follow the progression through:
+- commit history
+- README updates in each sub-project
 
 ---
 
 ## 📬 Contact
 
-If you'd like to discuss QA strategy, automation frameworks, or leadership:
+If you'd like to discuss QA strategy, automation frameworks, or leadership topics:
 
 - LinkedIn: https://www.linkedin.com/in/gillescapdivila  
-- Medium: *(coming soon)*  
-- Portfolio Website / Playground: *(coming soon)*  
+- Medium: https://medium.com/@gcapdivila
+- QA Playground / Portfolio website: https://gcquality-automation-demo.vercel.app 
 
 ---
 
@@ -103,4 +146,4 @@ No proprietary logic, test data, or confidential elements from any employer are 
 
 ---
 
-Thanks for visiting — and enjoy exploring the portfolio!
+Thanks for visiting — and feel free to explore the projects.

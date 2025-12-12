@@ -1,7 +1,7 @@
-import { test as testBase } from "@playwright/test";
+import { test as testBase } from "@fixtures/ui/header.fixture";
 import { LoginPage } from "@objects/ui/login.page";
 
-export { expect } from "@playwright/test";
+export { expect } from "@fixtures/ui/header.fixture";
 
 export const test = testBase.extend<{
     login: LoginPage;

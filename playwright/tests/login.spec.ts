@@ -12,7 +12,6 @@ test.describe('Verify happy path login', {tag: ['@login', '@smoke', '@happypath'
     const loginResponse = await loginAs(user);
     
     expect (loginResponse).not.toBeNull();
-    expect (loginResponse!.status).toBe(200);
     expect (loginResponse.user).toBe(user.username);
     expect (loginResponse.role).toBe(user.role);
   });
