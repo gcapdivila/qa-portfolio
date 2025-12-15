@@ -1,16 +1,11 @@
 # QA Automation Portfolio – Gilles Capdivila
 
-Welcome to my **Quality Assurance & Test Automation portfolio**.
+This repository showcases my approach to **Quality Engineering** through
+a live QA Playground and a set of focused automation examples.
 
-This repository gathers selected projects illustrating my work as a  
-**Senior QA Manager / QA Automation Lead**, with a strong focus on:
-
-- test automation architecture
-- maintainability and readability
-- quality engineering practices beyond “just testing”
-
-The goal of this portfolio is not to showcase as many tools as possible,
-but to demonstrate **how I design, structure, and reason about quality at scale**.
+The primary goal of this portfolio is to give recruiters a **clear and concrete view**
+of how I design tests, structure automation frameworks, and reason about quality
+in real-world scenarios.
 
 ---
 
@@ -121,11 +116,13 @@ Each automation project will eventually include **real, runnable test suites** t
 
 ## 🧭 Work in progress
 
-This portfolio evolves continuously as new experiments, refactors, and test strategies are added.
+This portfolio evolves continuously as new experiments, refactors, and test strategies are added. Highlights of the current state:
+- **Playwright**: framework scaffolded and live against the QA Playground; core flows (login, permissions, navigation) covered; a few UI tests still to be written.
+- **Selenium (Java & Python)**: not started yet (planned POM examples).
+- **API tests**: not started yet (planned Postman collections & Newman runners).
+- **Performance**: not started yet (planned k6 smoke/load samples).
 
-You can follow the progression through:
-- commit history
-- README updates in each sub-project
+You can follow the progression through commit history and the README of each sub-project as they grow.
 
 ---
 

@@ -1,5 +1,5 @@
 import { LocalStorageHelper } from "@helpers/local-storage";
-import { test as testBase } from "@fixtures/custom-expect";
+import { test as testBase } from "../../expectations/custom-expect";
 
 export const test = testBase.extend<{
     storage: LocalStorageHelper;

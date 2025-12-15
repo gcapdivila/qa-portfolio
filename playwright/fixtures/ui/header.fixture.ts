@@ -1,7 +1,7 @@
 import { HeaderComponent } from "@objects/ui/header.component";
-import { test as testBase } from "@fixtures/custom-expect";
+import { test as testBase } from "../../expectations/custom-expect";
 
-export { expect } from "@fixtures/custom-expect";
+export { expect } from "../../expectations/custom-expect";
 
 export const test = testBase.extend<{
     header: HeaderComponent;

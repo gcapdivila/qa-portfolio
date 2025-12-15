@@ -1,4 +1,4 @@
-import { PageName } from "@fixtures/custom-expect";
+import { PageName } from "../expectations/custom-expect";
 import { USERS } from "@fixtures/data/test-users";
 import { expect, test } from "@fixtures/ui/login.fixture";
 import { HeaderComponent } from "@objects/ui/header.component";
