@@ -23,6 +23,29 @@ export class TablePage {
         this.page.getByRole('button', { name: 'Reset' }).click()
     }
 
+    async getIdFromUsername(username: string) {
+        const row = this.page.getByRole('row')
+            .filter({ 
+                has: this.page.getByRole('cell').nth(1).getByText(username, { exact: true }) 
+            })
+        const cellId = row.getByRole('cell').first()
+        return await cellId.getAttribute('data-id')
+    }
+
+    async editUserByName(username: string, {newName = null, newRole = null}: {newName?: string | null, newRole?: string | null} = {}) {
+        this.page.getByRole('row', { name: username }).getByRole('button').click()
+        if (newName) this.page.locator('input[name="editName"]').fill(newName);
+        if (newRole) this.page.locator('select[name="editRole"]').selectOption(newRole);
+        this.page.getByRole('button', { name: 'Save' }).click()
+    }
+    
+    async editUserById(id: number | string) {
+        const row = this.page.getByRole('row')
+            .filter({ 
+                has: this.page.getByRole('cell').first().getByText('1', { exact: true }) 
+            })
+    }
+
     async previousPage() {
         this.page.getByRole('button', { name: 'Prev' }).click()
     }
