@@ -5,7 +5,7 @@ export class TablePage {
 
     async addUser(name: string, role: 'Admin' | 'User' | 'Guest' ) {
         await this.page.getByRole('textbox', { name: 'Name (required)' }).fill(name);
-        await this.page.getByRole('textbox', { name: 'Name (required)' }).selectOption(role);
+        await this.page.locator('#addRole').selectOption(role);
         await this.page.getByRole('button', { name: 'Add' }).click()
     }
 
@@ -30,6 +30,10 @@ export class TablePage {
             })
         const cellId = row.getByRole('cell').first()
         return await cellId.getAttribute('data-id')
+    }
+
+    async userExists(username: string) {
+        return typeof await this.getIdFromUsername(username) === 'string'
     }
 
     async editUserByName(username: string, {newName = null, newRole = null}: {newName?: string | null, newRole?: string | null} = {}) {
